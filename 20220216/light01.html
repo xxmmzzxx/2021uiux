@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../20220208_form/css/reset.css">
+    <style>
+    .box{
+        width: 100px;position:absolute;left: 50%;top:50%;transform: translate(-50%,-50%);
+    }
+    .box img{display: block;margin-bottom: 20px;}
+    .btnWrap{
+        display: flex;justify-content: space-between;
+    }
+    .btnWrap div{padding: 5px; background: skyblue;border-radius: 5px;cursor: pointer;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+        <img src="images/light_off.png" alt="" id="light"> 
+        <div class="btnWrap">
+            
+            <div onclick="lightOn()">켜기</div>
+            <div onclick="lightOff()">끄기</div>
+        </div>
+    </div>
+    <script>
+        const lightEle = document.getElementById("light")
+        const bodyEle = document.getElementByTagName("body")
+
+        function lightOn(){
+            console.log("on")
+            lightEle.src = "images/light_on.png"
+        }
+        function lightOff(){
+            console.log("Off")
+            lightEle.src = "images/light_off.png"
+        }
+    </script>
+</body>
+</html>

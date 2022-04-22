@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    /* reset  */
+    *{margin: 0;padding: 0;}
+    li{list-style:none}
+    .clearfix:after{content:"";display:block;clear:both}
+
+    /* css  */
+    div.box{
+        background-color: #f00;
+        width: 1000px;
+        /* margin:20px */
+        /* margin: 20px 20px 20px 20px */
+        /* margin:20px 20px; */
+        /* margin-left:auto */
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin: 0 auto;
+        text-align:center;
+        padding: 10px;
+    }
+
+    ul.nav{
+        width: 1000px;
+        margin: 0 auto;
+        background-color: skyblue;
+    }
+    ul.nav>li{
+        float:left;
+        /* width: 200px; */
+        width: 20%;
+        text-align:center;
+        background-color: yellow;
+    }
+    /* header */
+    div.header{
+        width: 1000px;
+        margin: 0 auto;
+        background-color: blueviolet;
+        text-align:center;
+
+    }
+div.header>h1{
+        text-align:center;
+}
+div.header>ul.nav_01>li{
+            float: left;
+            width: 20%;
+            text-align:center;
+
+}
+div.visual{
+            height:100px;
+            background-color: pink;
+        }
+   
+
+</style>
+<body>
+        <!-- <div class="box">test</div> -->
+        <div class="header">
+        <h1>logo</h1>
+        <ul class="nav_01 clearfix">
+<li>menu1</li>
+<li>menu2</li>
+<li>menu3</li>
+<li>menu4</li>
+<li>menu5</li>
+</div>
+        </ul>
+
+    <ul class="nav clearfix"> <!-- w 1000px -->
+        <li>menu1</li> <!-- w 200px -->
+        <li>menu2</li> 
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+    </ul>
+
+    <div class="visual"></div>
+   
+</body>
+</html>

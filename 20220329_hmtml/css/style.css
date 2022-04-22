@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+:root{
+    --bg-color1 : #ff00ff;
+    -gradient-color1:linear
+}
+.bg-color1{background: var(--bg-color1);}
+.btn.primary-button{background: --gradient-color;}
+.visual{
+    background: url;
+}
+.btn.primary-button{ 
+    background: var(--bg-color1);
+}
+.card img { height: 200px;}
+.contents-1s .card img {height: 200px;}

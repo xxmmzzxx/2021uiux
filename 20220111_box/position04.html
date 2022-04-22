@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+      <style>
+         html,body{height: 100%;}
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        li{list-style: none;}
+        a:link,a:visited{color: #000;text-decoration: none;}
+        .clearfix:after{content:"";display: block;clear: both;}
+        body{
+            background-image: url(02.jpg);
+            background-repeat: no-repeat;}
+            .boxWrap{
+                width: 400px;height: 150px;
+                background-color: #eaeaea;
+                margin-top:100px;
+                position: relative;
+
+            }
+            .boxWrap>div{
+                width: 100px;height: 50px;
+                position: absolute;
+                background-color: #5EB1FF
+                
+            }
+            .boxWrap>.box1{
+                width: 200px;
+                left:10px;top:10px;
+            }
+            .boxWrap>.box2{
+                width: 100px;
+                right: 10px;
+                top:10px;
+            }
+            .boxWrap>.box3{
+                width: 380px;bottom:10px;
+                left:10px;
+            }
+            
+    </style>
+</head>
+<body>
+    <div class="boxWrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

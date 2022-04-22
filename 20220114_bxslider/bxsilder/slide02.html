@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bxslider</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .box-wrapper{
+
+        
+        -moz-box-shadow: 0 0  0 #ccc;
+    -webkit-box-shadow: 0 0 0px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 0
+     }
+
+    </style>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".slider").bxSlider()
+        mode:'vertical';
+        auto:true;
+        controls:false
+    });
+    $(".nextBtn").click(function(){
+        slide.goToNextSlide();
+
+    })
+    $(".preBtn").click(function(){
+        slde.goToPrevSlide();
+    })
+</script>
+</head>
+
+
+<body>
+    <ul class="slider">
+        <li><a href="#"><img src="images/pc01.jpg" alt=""></a></li>
+        <li><a href="#"><img src="images/pc02.jpg" alt=""></a></li>
+    </ul>
+</body>
+</html>

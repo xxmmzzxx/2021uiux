@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        *{margin: 0;padding: 0; }
+        li{list-style: none;}
+        .clearfix:after{content:"";display:block;clear:both;}
+        a:link,
+        a:visited{color:black;text-decoration: none;}
+
+        /* header */
+        #header{width: 1000px;margin: 0 auto;}
+        #header>h1{float: left;width: 147px;height: 35px;}
+        #header>ul.nav{float:right;width: 600px;}
+        #header>ul.nav>li{float: left;width: 20%;}
+        #header>ul.nav>li>a{display: block;text-align: center;line-height: 35px;}
+        #header>ul.nav>li>a:hover{background-color: pink;
+        }
+        .visual{height: 300px;ba}
+
+    </style>
+</head>
+<body>
+    <header id="header" class="cleafix">
+        <h1><a href="#"><img src="logo.png" alt=""></a></h1>
+        
+            <ul class="nav clearfix">
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">menu</a></li>
+            </ul>
+        <div class="visual"></div>
+    </header>
+</body>
+</html>

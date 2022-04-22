@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../20220302_j/css/reset.css">
+    <style>
+        /* body{height: 400vh; */
+
+       
+        .container {
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .gnbWrap.fixed {
+            position: fixed;width: 100%;background: white;
+        }
+        .gnbWrap.fixed a{color:black}
+
+        .gnb {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .gnb ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gnb ul li {
+            height: 40px;
+            background: skyblue;
+            width: 20%;
+        }
+
+        .gnb ul li a {
+            height: 40px;
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* color  */
+       
+        .gray {
+            background: #ccc
+        }
+
+        .blue {
+            background: 
+        }
+
+        .gold {
+            background: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container gray">
+
+        <div class="gnbWrap fixed">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="container "></section>
+    <section class="container blue"></section>
+    <section class="container gold"></section>
+
+    <script>
+        //1.scroll : windows 객체 관련 정보 window.pageYOffset 
+        // window.메소드() 
+
+        window.addEventListener("scroll",function(){
+            console.log("스크롤실행")
+            let.scrollY = window.pageYOffset;
+            console.log(scrollY);
+            if(scrollY > 00){
+                document.querySelector(".gnbWrap").classList.add("fixed");}
+
+                else{
+                    document.querySelector(".gnbWrap").classList.remove("fixed")
+                }
+
+
+
+            }
+        })
+    </script>
+
+    
+</body>
+
+</html>

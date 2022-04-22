@@ -1,0 +1,20 @@
+@charset 'ut-8';    
+body{
+    background-image: url(../images/012.jpg);
+    background-repeat: no-repeat;
+}
+.box{background-color: #6592cf;height: 400px;width: 300px;
+margin-top: 100px;border-radius: 10px;overflow: hidden;
+}
+.box>img{
+    display: block;margin-bottom: 5px;
+    ;
+}
+.box_body{padding: 10px 20px
+}
+.box_body>h3{
+    color: white;font-size: 18px;line-height: 20px;margin-bottom: 10px;
+}
+.box_body>p{
+    color:white; font-size: 14px;line-height: 16px;
+}

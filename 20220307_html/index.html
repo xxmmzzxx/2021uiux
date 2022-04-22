@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../20220302_j/css/reset.css">
+    <style>
+        .container{height: 100vh;}
+        .gnbWrap.fixed{
+            position: absolute;width: 100%;background: #fff;
+        }
+        .gnbWrap.fixed a {color: #000;}
+
+        .gnb{width: 1000px;
+        margin: 0 auto;}
+        
+        .gnb ul{
+            display: flex;
+            justify-content: center;
+        }
+        .gnb ul li{
+            height: 40px;
+            background: skyblue;
+            width: 20%;
+
+        }
+        .gnb ul li a{display: block;
+        height: 40px;
+    display: flex;justify-content: center;align-items: center;}
+        
+     /* color  */
+        .gray{ background: #ccc;}
+        .pink{background: pink;}
+        .yellow{background: gold;}
+    </style>
+</head>
+<body>
+    <section class="container gray">
+        <div class="gnbWrap fixed">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu1</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="container"></section>
+    <section class="container pink"></section>
+    <section class="container yellow"></section>
+    <script>
+        window.addEventListener("scorll",function(){
+            let.scrollY = window.pageYOffset;
+            console.log(screenY);
+            if(scrollY > 00) {
+                document.querySelector(".gnbWrap").classList.add("fixed");
+            }
+            else{
+                document.querySelector(".gnbWrap").classList.remonve("fixed")
+            }
+        })
+    </script>
+</body>
+</html>
